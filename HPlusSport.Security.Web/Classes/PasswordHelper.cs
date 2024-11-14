@@ -5,7 +5,7 @@ namespace HPlusSport.Security.Web.Classes
     public static class PasswordHelper
     {
         private const int numberOfIterations = 310_000;
-        private static readonly HashAlgorithmName hashAlgorithm = new HashAlgorithmName();
+        private static readonly HashAlgorithmName hashAlgorithm = HashAlgorithmName.SHA512;
 
         public static HashInformation HashPassword(string password)
         {
